@@ -10,6 +10,10 @@
     </block>
 </swiper>
 </block>
+<view class='w100p'>
+    <image  bindtap="previewImage"  class='w100p' bindload="imageLoad" src='{{scene}}' ></image>
+</view>
+<ad unit-id="adunit-ed7ba4b4456fb1c2"></ad>
 <import src="../../component/filmList/filmList.wxml"/>
 <template is="filmList" data="{{films: films, hasMore: hasMore, showLoading: showLoading}}"/>
 <import src="../../component/message/message.wxml"/>

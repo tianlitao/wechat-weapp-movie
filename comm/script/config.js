@@ -12,30 +12,31 @@ shakeSound: 摇一摇音效地址（带url表示远程地址）
 shakeWelcomeImg: 摇一摇欢迎图片
 */
 var url = 'https://static.sesine.com/wechat-weapp-movie'
+var url_m = 'https://www.91aitv.com'
 module.exports = {
     city: '',
     count: 20,
     baiduAK: 'Y1R5guY8Y2GNRdDpLz7SUeM3QgADAXec',
     apiList: {
-        popular: 'https://api.douban.com/v2/movie/in_theaters',
-        coming: 'https://api.douban.com/v2/movie/coming_soon',
-        top: 'https://api.douban.com/v2/movie/top250',
+      popular: 'https://douban.uieee.com/v2/movie/in_theaters',
+      coming: 'https://douban.uieee.com/v2/movie/coming_soon',
+      top: 'https://douban.uieee.com/v2/movie/top250',
         search: {
-            byKeyword: 'https://api.douban.com/v2/movie/search?q=', 
-            byTag: 'https://api.douban.com/v2/movie/search?tag='
+          byKeyword: 'https://douban.uieee.com/v2/movie/search?q=',
+          byTag: 'https://douban.uieee.com/v2/movie/search?tag='
         },
-        filmDetail: 'https://api.douban.com/v2/movie/subject/',
-        personDetail: 'https://api.douban.com/v2/movie/celebrity/',
+        filmDetail: 'https://douban.uieee.com/v2/movie/subject/',
+        personDetail: 'https://douban.uieee.com/v2/movie/celebrity/',
         baiduMap: 'https://api.map.baidu.com/geocoder/v2/'
     },
     hotKeyword: ['功夫熊猫', '烈日灼心', '摆渡人', '长城', '我不是潘金莲', '这个杀手不太冷', '驴得水', '海贼王之黄金城', '西游伏妖片', '我在故宫修文物', '你的名字'],
     hotTag: ['动作', '喜剧', '爱情', '悬疑'],
     bannerList: [
-        {type:'film', id: '26683290', imgUrl: url + '/images/banner_1.jpg'},
-        {type:'film', id: '25793398', imgUrl: url + '/images/banner_2.jpg'},
-        {type:'film', id: '26630781', imgUrl: url + '/images/banner_3.jpg'},
-        {type:'film', id: '26415200', imgUrl: url + '/images/banner_4.jpg'},
-        {type:'film', id: '3025375', imgUrl: url + '/images/banner_5.jpg'}
+        {type:'film', id: '26683290', imgUrl: url_m + '/wx_images/banner_1.jpeg'},
+        {type:'film', id: '25793398', imgUrl: url_m + '/wx_images/banner_2.jpeg'},
+        {type:'film', id: '26630781', imgUrl: url_m + '/wx_images/banner_3.jpeg'},
+        {type:'film', id: '26415200', imgUrl: url_m + '/wx_images/banner_4.jpeg'},
+        {type:'film', id: '3025375', imgUrl: url_m + '/wx_images/banner_5.jpeg'}
     ],
     skinList: [
         {title: '公路', imgUrl: url + '/images/user_bg_1.jpg'},

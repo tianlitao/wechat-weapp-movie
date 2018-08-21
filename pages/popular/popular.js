@@ -7,7 +7,8 @@ Page({
 		hasMore: true,
 		showLoading: true,
 		start: 0,
-		bannerList: config.bannerList
+		bannerList: config.bannerList,
+		scene:  'https://www.91aitv.com/wx_images/gongzhong.png',
 	},
 	onLoad: function() {
 		var that = this
@@ -41,7 +42,7 @@ Page({
 		wx.navigateTo({
 			url: "../filmDetail/filmDetail?id=" + data.id
 		})
-	},	
+	},
 	viewFilmByTag: function(e) {
 		var data = e.currentTarget.dataset
 		var keyword = data.tag
@@ -67,6 +68,12 @@ Page({
 			})
 		}
 	},
+  previewImage: function (e) {
+  wx.previewImage({
+    urls: this.data.scene.split(',')
+    // 需要预览的图片http链接  使用split把字符串转数组。不然会报错
+  	})
+  },
 	viewSearch: function() {
 		wx.navigateTo({
 			url: '../search/search'
